@@ -4,8 +4,8 @@ import "fmt"
 
 type Command struct{}
 
-func (c Command) Execute() {
+func (c *Command) Execute() {
 	fmt.Println("default ReservedCommand(Execute)")
 }
 
-var Cmd Command
+var ReservedCommander Command
